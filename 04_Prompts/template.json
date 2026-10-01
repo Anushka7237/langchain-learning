@@ -1,0 +1,16 @@
+{
+    "name": null,
+    "input_variables": [
+        "subject_input",
+        "topic_input"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\n    You are an expert teacher.\n\n    Explain the following topic in a simple and clear way.\n\n    Subject: {subject_input}\n    Topic: {topic_input}\n\n    Provide:\n    1. A simple definition\n    2. Detailed explanation\n    3. A practical example\n    4. Important points to remember\n    5. A short summary\n    ",
+    "template_format": "f-string",
+    "validate_template": false,
+    "_type": "prompt"
+}
