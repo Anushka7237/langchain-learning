@@ -1,6 +1,6 @@
-# LangChain Learning 
+﻿# LangChain Learning
 
-This repository is a hands-on collection of LangChain examples covering core concepts such as LLMs, chat models, embeddings, prompts, output parsing, structured outputs, and chains.
+This repository is a hands-on collection of LangChain examples covering core concepts such as LLMs, chat models, embeddings, prompts, output parsing, structured outputs, chains, and runnable components.
 
 The project is designed for learning and experimentation, with each folder focused on a specific LangChain capability.
 
@@ -13,6 +13,7 @@ The project is designed for learning and experimentation, with each folder focus
 - `05_OutputParsers/` - Parsing raw model output into JSON, strings, or structured data
 - `06_StructuredOutput/` - Pydantic and TypedDict-based structured output demos
 - `07_Chains/` - Sequential, parallel, conditional, and simple chain examples
+- `08_Runnables/` - Runnable interfaces, composition patterns, and execution flow examples
 - `chatbot.py` - Simple interactive chatbot example using Hugging Face
 - `requirements.txt` - Python dependencies for the project
 
@@ -56,11 +57,9 @@ OPENAI_API_KEY=your_openai_key
 ANTHROPIC_API_KEY=your_anthropic_key
 GOOGLE_API_KEY=your_google_key
 HUGGINGFACEHUB_API_TOKEN=your_hf_token
-
 ```
 
 ## Notes
 - This is a learning repository, so examples may depend on third-party model APIs and may require valid credentials.
 - Some scripts are intentionally simple and meant to illustrate LangChain concepts rather than production-ready architecture.
 - If a model provider is not configured, skip that example or add the corresponding API key to your environment.
-#
