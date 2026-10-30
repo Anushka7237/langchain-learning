@@ -14,14 +14,16 @@ The project is designed for learning and experimentation, with each folder focus
 - `06_StructuredOutput/` - Pydantic and TypedDict-based structured output demos
 - `07_Chains/` - Sequential, parallel, conditional, and simple chain examples
 - `08_Runnables/` - Runnable interfaces, composition patterns, and execution flow examples
+- `09_Document_Loader/` - Examples for loading CSV, PDF, text, and web documents
 - `chatbot.py` - Simple interactive chatbot example using Hugging Face
+- `Social_Network_Ads.csv`, `Syllabus.pdf`, and `cricket.txt` - Sample files used by document-loader examples
 - `requirements.txt` - Python dependencies for the project
 
 ## Prerequisites
 
 - Python 3.10 or newer
 - A virtual environment (recommended)
-- API keys for the providers you want to test (OpenAI, Anthropic, Google, Hugging Face, etc.)
+- API keys for the providers used by the examples you want to run (OpenAI, Anthropic, Google, Hugging Face, Groq, etc.)
 
 ## Setup
 
@@ -57,9 +59,12 @@ OPENAI_API_KEY=your_openai_key
 ANTHROPIC_API_KEY=your_anthropic_key
 GOOGLE_API_KEY=your_google_key
 HUGGINGFACEHUB_API_TOKEN=your_hf_token
+GROQ_API_KEY=your_groq_key
 ```
 
 ## Notes
 - This is a learning repository, so examples may depend on third-party model APIs and may require valid credentials.
 - Some scripts are intentionally simple and meant to illustrate LangChain concepts rather than production-ready architecture.
+- Document-loader scripts that use relative file paths should be run from the repository root.
+- Some loaders may require optional provider or file-format packages beyond the core dependencies.
 - If a model provider is not configured, skip that example or add the corresponding API key to your environment.
